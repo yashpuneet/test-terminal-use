@@ -7,12 +7,13 @@ public class Hello
 		//Author: Yash Puneet (yash.puneet02@gmail.com)
 		String name = "World";
 
-		if(argv.length != 0)
+		if(args.length != 0)
 		{
-			name = argv[0];
+			name = args[0];
 		}
 
-		System.out.println("Hello, " + name + "!");
+		Greeter greeter = new Greeter(name);
+		System.out.println(greeter.greet());
 	}
 }
 
